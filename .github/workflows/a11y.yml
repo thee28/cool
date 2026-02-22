@@ -15,6 +15,6 @@ jobs:
         with:
           APP_DIR: '.'
           BUILD_DIR: 'public'
-          URLS: '/'       # TODO: Add the URLs of the apps to check
+          URLS: '/ /zh-hans/ /zh-hant/' 
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}               
 
