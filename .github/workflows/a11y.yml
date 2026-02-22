@@ -13,8 +13,8 @@ jobs:
       - name: Run accessibility check
         uses: zachkklein/WCAG_PR_Checker@main
         with:
-          APP_DIR: '.'
-          BUILD_DIR: 'public'
-          URLS: '/ /zh-hans/ /zh-hant/' 
+          APP_DIR: '.' 
+          BUILD_DIR: '.next/server/app'
+          URLS: '/,/dashboard' 
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}               
 
